@@ -17,33 +17,33 @@ module.exports = {
     {
       files: '*.json', // JSON文件特殊处理
       options: {
-        parser: 'json', // 解析器为json解析器
-      },
+        parser: 'json' // 解析器为json解析器
+      }
     },
     {
       files: '*.vue', // vue文件特殊处理
       options: {
-        parser: 'vue', // vue文件解析器
-      },
+        parser: 'vue' // vue文件解析器
+      }
     },
     {
       files: '*.{css,scss,less}', // css文件处理
       options: {
         parser: 'css', // css解析器
-        singleQuote: false, // 是否使用单引号
-      },
+        singleQuote: false // 是否使用单引号
+      }
     },
     {
       files: '*.md', // markdown文件处理
       options: {
-        parser: 'markdown', // markdown解析器
-      },
+        parser: 'markdown' // markdown解析器
+      }
     },
     {
       files: '*.{yml,yaml}', // yml文件处理
       options: {
-        parser: 'yaml', // yml文件解析器
-      },
-    },
-  ],
+        parser: 'yaml' // yml文件解析器
+      }
+    }
+  ]
 };

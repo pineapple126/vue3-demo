@@ -3,17 +3,18 @@ module.exports = {
   env: {
     // 指定eslint启动环境(vuecli底层是node支持)，browser：true也可以在浏览器设置
     browser: true, // browser global variables
-    es2021: true, // adds all ECMAScript 2021 globals and automatically sets the ecmaVersion parser option to 12.
+    es2021: true // adds all ECMAScript 2021 globals and automatically sets the ecmaVersion parser option to 12.
   },
   extends: [
     // 扩展配置
     'plugin:vue/vue3-recommended',
     'airbnb-base',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
     // 对新语法使用eslint
     ecmaVersion: 12,
+    parser: '@typescript-eslint/parser'
   },
   plugins: ['prettier'],
   rules: {
@@ -23,6 +24,6 @@ module.exports = {
     //  "off" or 0 - 关闭规则
     //  "warn" or 1 - 将规则视为一个警告(不会影响退出码)，只警告，不会退出程序
     //  "error" or 2 - 将规则视为一个错误(退出码为1)，报错并退出程序
-    'prettier/prettier': 'error',
-  },
+    'prettier/prettier': 'error'
+  }
 };
