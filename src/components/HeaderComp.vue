@@ -1,9 +1,18 @@
 <template>
-  <div>header-bar</div>
+  <TopBar />
+  <NavBar />
 </template>
 
 <script lang="ts">
-export default {};
+import TopBar from './TopBar.vue';
+import NavBar from './NavBar.vue';
+
+export default {
+  components: {
+    TopBar,
+    NavBar
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
