@@ -10,6 +10,9 @@
           <sup v-if="item.isLast" class="wrap-list-icon"></sup>
         </li>
       </ul>
+      <div class="wrap-login">
+        <a :hidefocus="true" class="wrap-login-link">登录</a>
+      </div>
       <a class="wrap-creator">创作者中心</a>
       <div class="wrap-search">
         <div class="wrap-search-input">
@@ -138,6 +141,24 @@ export default {
       }
     }
 
+    &-login {
+      position: relative;
+      float: right;
+      height: 45px;
+      margin: 19px 0 0 20px;
+      padding: 0 22px 0 0;
+      background: url(@/assets/topbar.png) no-repeat 0 9999px;
+      background-position: right -47px;
+      background-image: none;
+
+      &-link {
+        display: block;
+        width: 28px;
+        margin-top: 7px;
+        color: #787878;
+      }
+    }
+
     &-creator {
       float: right;
       width: 90px;
@@ -199,5 +220,9 @@ export default {
       }
     }
   }
+}
+
+.wrap-login:hover .wrap-login-link {
+  color: #666;
 }
 </style>
